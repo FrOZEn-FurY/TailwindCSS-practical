@@ -1,0 +1,27 @@
+@tailwind base; /* This gets generated and the others won't. this will be the base of our tailwind css. */
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer utilities {
+    .nimra {
+        background-color: blueviolet;
+        color: bisque;
+        text-shadow: 10px 10px 2px black;
+        text-align: center;
+        font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+        font-weight: 400;
+        border: 1px solid darkslategrey;
+    }
+}
+
+@layer components {
+    .card {
+        @apply w-2/5 bg-slate-300 text-black p-8 mx-auto mt-2 font-medium text-[14px] text-justify
+        rounded-xl border-x-black border-solid border-2 dark:bg-slate-800 dark:text-white
+    }
+    .card-btn {
+        @apply block w-1/5 mx-auto bg-blue-500 border-solid border-b-black border-b-2 rounded-3xl hover:bg-blue-900 hover:text-white
+        mt-2 transition-all duration-200 delay-75 ease-out p-4 cursor-pointer font-['Serif'] dark:bg-rose-900 dark:text-white
+    }
+}

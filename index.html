@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="./dist/result.css" />
+  </head>
+  <body id="body" class="">
+    <button class="card-btn my-4" id="darkMode">Dark Mode</button>
+    <section
+      class="bg-lime-500 p-4 text-center font-medium smm:bg-yellow-950 smm:p-8 smm:text-end smm:font-medium 3xl:bg-slate-500 3xl:p-32 3xl:text-center 3xl:font-medium 2xl:bg-blue-500 2xl:p-8 2xl:text-end 2xl:font-medium xl:bg-green-500 xl:p-12 xl:text-start xl:font-medium lg:bg-purple-500 lg:p-2 lg:text-center lg:font-medium md:bg-sky-500 md:p-8 md:w-1/2 md:font-medium sm:bg-red-500 sm:p-20 sm:text-center sm:font-medium"
+    >
+      Handle responsive: nothing -> mobile, sm -> bigger than mobile, we can say
+      tablet, md -> could be said small laptops, lg -> could be said big laptops
+      and desktop PCs, xl -> big PCs, 2xl -> very big
+    </section>
+    <div class="bg-gray-700 text-center p-6 mx-auto container box-border">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam deleniti
+      cupiditate omnis! Recusandae nam sapiente voluptates delectus quisquam
+      quis cumque, ratione quidem error corrupti culpa? Odit et ad corrupti
+      repudiandae?
+    </div>
+    <ul class="m-2">
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        This list has gradient hover effect!
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 2
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 3
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 4
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 5
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 6
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 7
+      </li>
+      <li
+        class="odd:bg-slate-800 odd:text-slate-400 even:bg-slate-400 even:text-slate-800 p-4 hover:bg-gradient-to-r hover:from-sky-400 hover:to-rose-600 hover:via-yellow-900"
+      >
+        Item 8
+      </li>
+    </ul>
+    <div
+      class="hover:nimra bg-rose-500 p-8 m-4 text-center transition-all duration-500 delay-100 ease-in-out"
+    >
+      This div uses a user defined class to style itself. As you see, you can
+      give sizing and pseodu elements to it and use with that class as well.
+    </div>
+    <div
+      class="group w-4/5 p-12 mx-auto bg-gray-700 text-white hover:bg-black hover:text-xl transition-all duration-500 delay-75 ease-in-out"
+    >
+      <h1
+        class="group-hover:text-sky-800 transition-all duration-75 ease-in-out"
+      >
+        This is the test for
+        <span
+          class="group-hover:font-bold group-hover:underline transition-all duration-75 ease-in-out bg-[#50d71e] p-2"
+          >Group Hover</span
+        >!
+      </h1>
+      <p
+        class="group-hover:text-sky-400 transition-all duration-75 ease-in-out"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+        perspiciatis minus ducimus officia accusamus! Illo voluptatem unde
+        laudantium, assumenda minima cum facere sed, tempora nulla obcaecati
+        voluptates dolorum, modi nemo!
+      </p>
+      <hr class="my-2" />
+      <button
+        class="p-4 rounded-full bg-pink-600 text-black group-hover:bg-blue-700 hover:shadow-2xl hover:shadow-sky-300 transition-all duration-500 delay-100 ease-in-out"
+      >
+        Button
+      </button>
+    </div>
+    <button
+      class="p-4 bg-lime-600 text-black block mx-auto my-4 rounded-full xl:active:bg-sky-400 active:shadow-2xl xl:active:shadow-black active:bg-pink-400 shadow-yellow-950 transition-all duration-200 delay-75 ease-linear"
+    >
+      This button has active breakpojnt effects. Hold on it!
+    </button>
+    <input
+      type="text"
+      class="block p-4 rounded-full w-[500px] bg-black/75 text-white mx-auto focus:ring-8 focus:w-4/5 placeholder:text-gray-500/100 transition-all duration-500 delay-75 ease-in-out"
+      placeholder="Testing focus breakpoint."
+    />
+    <h1 class="bg-tahiti mx-auto p-4 w-2/5 mt-2">My custom color!</h1>
+    <div
+      class="bg-[url('/img/flower.jpg')] h-[800px] bg-no-repeat bg-fixed bg-cover bg-center"
+    >
+      This image is parallax.
+    </div>
+    <div class="card">
+      <h1>This is a component named card.</h1>
+      <hr class="border-solid border-black border-2 my-2" />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum id
+      asperiores ducimus exercitationem aperiam architecto. Asperiores
+      veritatis, tempore repellat laborum voluptatum quos quibusdam accusamus?
+      Voluptatum recusandae harum ipsam repellendus.
+      <button class="card-btn">Card button</button>
+    </div>
+    <script>
+      let button = document.getElementById("darkMode");
+      let body = document.getElementById("body");
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (body.classList.contains("dark")) body.classList.remove("dark");
+        else body.classList.add("dark");
+      });
+    </script>
+  </body>
+</html>
